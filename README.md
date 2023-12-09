@@ -30,6 +30,9 @@ DB는 mariaDB를 사용합니다.
 ### 프론트엔드, SCD_FrontEnd_nginx서버에서
 * nginx
 
+## 접속
+서버 실행 후 브라우저에서 IP로 접속
+
 ## 기타
 이 레포지토리는 아래 링크의 2023년도 1학기 AI+X:딥러닝 강의의 팀프로젝트의 연장선으로 진행된 프로젝트입니다.  
 https://github.com/EasternPen9uin/ShoppingCartDetector  
