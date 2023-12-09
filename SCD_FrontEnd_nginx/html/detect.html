@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="src/common/common_style.css">
+  	<title>Detect</title>
+</head>
+<body>
+	<!-- 웹캠으로부터 들어오는 정보를 실시간으로 저장할 video(숨겨짐) -->
+    <div class="whitebox">
+        <div class="contentscontainer">
+            카메라 선택 : <br>
+            <select class="selection" id="camlist"><select></select><br>
+            <canvas class="webcamcanvas" id="main_canvas"></canvas><br>
+            전체화면 : 위 화면 클릭
+        </div>
+    </div>
+    <img id="test" />
+    <video class="webcamvideo" autoplay="true" id="videoElement"></video>
+    <canvas class="hiddencanvas" id="hidden_canvas"></canvas>
+    <audio controls id="hidden_alarm" class="hidden_audio">
+        <source src="res/alert.wav" type="audio/wav"/>
+        브라우저가 audio태그를 지원하지 않습니다.
+    </audio>
+    <script type="module" src="src/detect.js"></script>
+</body>
+</html>
