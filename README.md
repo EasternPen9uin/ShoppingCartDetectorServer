@@ -31,6 +31,6 @@ python manage.py createsuperuser
 * nginx
 
 ## 기타
-이 레포지토리는 아래 링크의 2023년도 1학기 AI+X:딥러닝 강의의 팀프로젝트의 연장선으로 진행된 프로젝트입니다.
-https://github.com/EasternPen9uin/ShoppingCartDetector
-이 레포지토리에 사용된 모델은 2023년도 1학기의 데이터셋에서 이마트 쇼핑카트 데이터셋을 직접 촬영하여 보완한 모델입니다.
+이 레포지토리는 아래 링크의 2023년도 1학기 AI+X:딥러닝 강의의 팀프로젝트의 연장선으로 진행된 프로젝트입니다.  
+https://github.com/EasternPen9uin/ShoppingCartDetector  
+이 레포지토리에 사용된 모델은 2023년도 1학기의 데이터셋에서 이마트 쇼핑카트 데이터셋을 직접 촬영하여 보완한 모델입니다.  
