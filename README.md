@@ -10,7 +10,7 @@ DB는 mariaDB를 사용합니다.
 * pip install -r requirements.txt
 2. SCD_Backend/SCD_Backend/settings.py파일의 DATABASES부분의 'USER', 'PASSWORD' 부분에 mariaDB의 유저명과 패스워드를 작성해주세요. 
 3. SCD_Backend/SCD_Backend/settings.py파일 내 SECRET_KEY 부분을 반드시 작성해주세요. 아래 링크에서 생성된 것으로 해도 됩니다.
-https://miniwebtool.com/django-secret-key-generator/
+* https://miniwebtool.com/django-secret-key-generator/
 4. DB에 "shoppingcart_detect"라는 이름의 데이터베이스를 생성합니다. 2번에서 NAME부분을 변경했다면 변경한 이름으로 만듭니다.
 5. 아래 명령어를 사용하여 DB에 스키마를 추가합니다.
 * cd SCD_Backend
