@@ -5,6 +5,11 @@ Yolov5모델(SCD_Backend/custom_util/best.pt)을 사용하여 쇼핑카트가 �
 백엔드는 python의 djangorestframework를 사용하며, 백엔드 서버로는 daphne, waitress를 사용합니다.  
 DB는 mariaDB를 사용합니다.  
 
+## 서버 요구사항
+백엔드 코드에서 cuda연산이 필요한 부분이 존재합니다.  
+따라서 cuda연산이 지원되는 nvidia그래픽카드를 사용해주세요.  
+requirements.txt내 torch버전을 수정하면 cpu에서도 동작이 가능하나, cpu상에서는 연산이 느리므로 추천하지는 않습니다.  
+
 ## 서버 실행 전 설정해야 하는 것들
 1. 아래 명령어로 파이썬 라이브러리를 설치해주세요.  
 ```pip install -r requirements.txt```  
