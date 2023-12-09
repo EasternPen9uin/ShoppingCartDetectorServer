@@ -22,12 +22,12 @@ DB는 mariaDB를 사용합니다.
 8. SCD_FrontEnd_nginx 내 cert폴더에 https연결을 위한 인증서 파일(cert.pem, privKey.pem)을 생성해야합니다. (프론트엔드 코드 중, 카메라에 접근하는 api가 https연결을 요구하므로, 반드시 필요합니다.)
 
 ## 실행
-### 백엔드
+### 백엔드(SCD_Backend폴더에서)
 * waitress-serve --listen=*:8000 SCD_Backend.wsgi:application
 * daphne -b 0.0.0.0 -p 8001 SCD_Backend.asgi:application
 * daphne -b 0.0.0.0 -p 8002 SCD_Backend.asgi:application
 * daphne -b 0.0.0.0 -p 8003 SCD_Backend.asgi:application
-### 프론트엔드, SCD_FrontEnd_nginx서버에서
+### 프론트엔드(SCD_FrontEnd_nginx폴더에서)
 * nginx
 
 ## 접속
