@@ -25,6 +25,7 @@ requirements.txt내 torch버전을 수정하면 cpu에서도 동작이 가능하
 ```python manage.py createsuperuser```  
 7. SCD_FrontEnd_nginx 폴더 내 파일들은 nginx설정파일입니다. nginx를 다운받은 후, SCD_FrontEnd_nginx로 옮기되 중복되는 파일은 겹치지 않도록 합니다.  
 8. SCD_FrontEnd_nginx 내 cert폴더를 생성하고, 그 폴더 내에 https연결을 위한 인증서 파일(cert.pem, privKey.pem)을 생성해야합니다. (프론트엔드 코드 중, 카메라에 접근하는 api가 https연결을 요구하므로, 반드시 필요합니다.)
+9. 만약 사용자 수가 100명 이상일 경우 백엔드 서버에서 "Too many connections" 오류가 발생할 수 있습니다. 이는 MariaDB에 접근하는 횟수가 순간적으로 'max_connections'(기본값:151)의 값보다 많아져서 생기는 오류입니다. 필요시 해당 값을 늘려주시길 바랍니다.
 
 ## 실행
 ### 백엔드(SCD_Backend폴더에서)
