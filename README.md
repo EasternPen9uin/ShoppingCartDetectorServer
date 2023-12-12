@@ -29,10 +29,10 @@ requirements.txt내 torch버전을 수정하면 cpu에서도 동작이 가능하
 
 ## 실행
 ### 백엔드(SCD_Backend폴더에서)
-```waitress-serve --listen=*:8000 SCD_Backend.wsgi:application```
-```daphne -b 0.0.0.0 -p 8001 SCD_Backend.asgi:application```
-```daphne -b 0.0.0.0 -p 8002 SCD_Backend.asgi:application```
-```daphne -b 0.0.0.0 -p 8003 SCD_Backend.asgi:application```
+```waitress-serve --listen=*:8000 SCD_Backend.wsgi:application```   
+```daphne -b 0.0.0.0 -p 8001 SCD_Backend.asgi:application```   
+```daphne -b 0.0.0.0 -p 8002 SCD_Backend.asgi:application```   
+```daphne -b 0.0.0.0 -p 8003 SCD_Backend.asgi:application```   
 ### 프론트엔드(SCD_FrontEnd_nginx폴더에서)
 ```nginx```
 
